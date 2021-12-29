@@ -1,6 +1,13 @@
-function [voice_f_filterd ] = Spectrum_PSD_and_filter( signal_t, Fs )
+function [voice_f_filterd] = Spectrum_PSD_and_filter( signal_t, Fs )
 %UNTITLED2 Summary of this function goes here
-%   Detailed explanation goes here
+% Inputs:
+%   signal_t:          Signal in Time Domain
+%   Fs:                Sampling frequency
+% Outputs:
+%   voice_f_filterd:   Filterd signal in Frequency domain
+%   Plot of both the Frequncy Spectrum & PSD (Power Spectral Density)
+%   Plot of both the filter & filterd signal
+
 
 % Part2 : spectrum and spectral density
 N = length(signal_t);
